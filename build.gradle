@@ -59,7 +59,3 @@ sonarqube {
         property "sonar.projectKey", "com.sonarqube.examples.test-spring-security-angular-project"
     }
 }
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '1.12'
-}
