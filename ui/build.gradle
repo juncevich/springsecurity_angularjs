@@ -12,9 +12,6 @@ buildscript {
     }
 }
 
-plugins {
-    id "org.sonarqube" version "2.2"
-}
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
@@ -66,9 +63,3 @@ jacocoTestReport {
     }
 }
 
-sonarqube {
-    properties {
-        property "sonar.projectName", "Test spring security angular project"
-        property "sonar.projectKey", "com.sonarqube.examples.test-spring-security-angular-project"
-    }
-}

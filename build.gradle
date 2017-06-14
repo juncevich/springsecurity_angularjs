@@ -1,4 +1,6 @@
-
+plugins {
+    id "org.sonarqube" version "2.2"
+}
 
 allprojects {
     group = 'com.example.gradle'
@@ -23,7 +25,6 @@ allprojects {
 }
 
 subprojects {
-
     test.useJUnit()
 }
 
@@ -46,6 +47,12 @@ codeCoverageReport.dependsOn {
     subprojects*.test
 }
 
+sonarqube {
+    properties {
+        property "sonar.projectName", "Test spring security angular project"
+        property "sonar.projectKey", "com.sonarqube.examples.test-spring-security-angular-project"
+    }
+}
 
 task wrapper(type: Wrapper) {
     gradleVersion = '1.12'
