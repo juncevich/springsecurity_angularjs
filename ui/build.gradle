@@ -1,0 +1,74 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.4.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath 'ro.isdc.wro4j.gradle:wro4j-gradle-plugin:1.8.0.Beta4'
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+plugins {
+    id "org.sonarqube" version "2.2"
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'jacoco'
+apply plugin: 'wro4j'
+
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+group = 'ro.isdc.wro4j.gradle'
+repositories {
+    mavenCentral()
+}
+
+ext {
+    versionAngular = '1.4.9'
+    versionJQuery = '2.2.4'
+    versionBootstrap = '3.3.7'
+    versionJasmine = '2.0.0'
+}
+
+webResources {
+    bundle('angular-bootstrap') {
+        css "webjars/bootstrap/$versionBootstrap/less/bootstrap.less"
+        preProcessor 'less4j'
+        js "webinjector:modulerrjars/jquery/$versionJQuery/jquery.min.js"
+        js "webjars/angularjs/$versionAngular/angular.min.js"
+        js "webjars/angularjs/$versionAngular/angular-route.min.js"
+        js "webjars/angularjs/$versionAngular/angular-cookies.min.js"
+        preProcessor 'jsMin'
+    }
+
+
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-security')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    webjars("org.webjars:angularjs:$versionAngular")
+    webjars("org.webjars.bower:bootstrap:$versionBootstrap")
+    webjars("org.webjars.npm:jquery:$versionJQuery")
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled false
+    }
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectName", "Test spring security angular project"
+        property "sonar.projectKey", "com.sonarqube.examples.test-spring-security-angular-project"
+    }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/resource/resource.iml" filepath="$PROJECT_DIR$/.idea/modules/resource/resource.iml" group="resource" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/resource/resource_main.iml" filepath="$PROJECT_DIR$/.idea/modules/resource/resource_main.iml" group="resource" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/resource/resource_test.iml" filepath="$PROJECT_DIR$/.idea/modules/resource/resource_test.iml" group="resource" />
+      <module fileurl="file://$PROJECT_DIR$/springsecurity_angularjs.iml" filepath="$PROJECT_DIR$/springsecurity_angularjs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springsecurity_angularjs_main.iml" filepath="$PROJECT_DIR$/.idea/modules/springsecurity_angularjs_main.iml" group="springsecurity_angularjs" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springsecurity_angularjs_test.iml" filepath="$PROJECT_DIR$/.idea/modules/springsecurity_angularjs_test.iml" group="springsecurity_angularjs" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ui/ui.iml" filepath="$PROJECT_DIR$/.idea/modules/ui/ui.iml" group="ui" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ui/ui_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ui/ui_main.iml" group="ui" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ui/ui_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ui/ui_test.iml" group="ui" />
+    </modules>
+  </component>
+</project>
