@@ -1,7 +1,13 @@
 plugins {
     id "org.sonarqube" version "2.2"
 }
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
 
+    maven { url "http://repo1.maven.org/maven2/" }
+}
 allprojects {
     group = 'com.example.gradle'
     version = '0.1.0'
