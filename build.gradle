@@ -55,7 +55,7 @@ codeCoverageReport.dependsOn {
 
 sonarqube {
     properties {
-        property "sonar.projectName", "Test spring security angular project"
+        property "sonar.projectName", "Spring security angular project"
         property "sonar.projectKey", "com.sonarqube.examples.test-spring-security-angular-project"
     }
 }
