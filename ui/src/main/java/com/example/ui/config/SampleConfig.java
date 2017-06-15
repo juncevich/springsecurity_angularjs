@@ -1,4 +1,4 @@
-package com.example.demo.config;
+package com.example.ui.config;
 
 import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.context.annotation.Configuration;
