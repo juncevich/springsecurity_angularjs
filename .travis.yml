@@ -9,6 +9,7 @@ addons:
     token:
       secure: $SONAR_TOKEN
 script:
+  - docker-compose up
   - ./gradlew check
   - ./gradlew codeCoverageReport
   - ./gradlew sonarqube
