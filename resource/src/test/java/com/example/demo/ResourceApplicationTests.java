@@ -12,6 +12,7 @@ public class ResourceApplicationTests {
     @Test
     public void contextLoads() {
 
+        // empty
     }
 
 }
