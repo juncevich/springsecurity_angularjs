@@ -1,7 +1,7 @@
 language: java
 sudo: true
 script:
-  - ./run "docker-compose up"
+  - docker-compose up
 install: true
 after_success:
   - bash <(curl -s https://codecov.io/bash)
