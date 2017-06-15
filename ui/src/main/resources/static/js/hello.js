@@ -14,9 +14,9 @@ angular.module('hello', ['ngRoute'])
         $httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';
 
     })
-    .controller('home', function($http) {
+    .controller('home', function ($http) {
         var self = this;
-        $http.get('http://localhost:9000/').then(function(response) {
+        $http.get('http://localhost:9000/').then(function (response) {
             self.greeting = response.data;
         })
     })
