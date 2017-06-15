@@ -16,7 +16,8 @@ public class SampleResourceController {
 
     @RequestMapping("/")
     @CrossOrigin(origins = "*",
-            maxAge = 3600)
+            maxAge = 3600,
+            allowedHeaders = { "x-auth-token", "x-requested-with" })
     public Message home() {
 
         return new Message("Hello World");
