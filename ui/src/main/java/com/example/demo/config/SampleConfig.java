@@ -15,14 +15,13 @@ import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 @EnableWebSecurity
 @Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
 public class SampleConfig extends WebSecurityConfigurerAdapter {
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http
-                .httpBasic().and()
-                .authorizeRequests()
-                .antMatchers("/index.html", "/home.html", "/login.html", "/").permitAll().anyRequest()
-                .authenticated().and()
-                .csrf()
+
+        http.httpBasic().and().authorizeRequests()
+                .antMatchers("/index.html", "/home.html", "/login.html", "/").permitAll()
+                .anyRequest().authenticated().and().csrf()
                 .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
     }
 }
