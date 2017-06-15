@@ -24,4 +24,5 @@ public class SampleConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated().and().csrf()
                 .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
     }
+
 }
