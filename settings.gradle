@@ -1,1 +1,1 @@
-include "ui", "resource", "authserver", "gateway"
+include "ui", "resource", "admin", "gateway"

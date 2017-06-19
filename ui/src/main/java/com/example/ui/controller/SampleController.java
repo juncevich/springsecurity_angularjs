@@ -15,7 +15,6 @@ public class SampleController {
 
     @RequestMapping("/user")
     public Map<String, String> user(Principal user) {
-
         return Collections.singletonMap("name", user.getName());
     }
 }
