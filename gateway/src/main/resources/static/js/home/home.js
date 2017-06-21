@@ -1,7 +1,7 @@
 /**
  * Home component
  * 
- * Created by juncevich on 6/21/17.
+ * Created by Aleksandr Juncevich on 6/21/17.
  */
 angular.module('home', []).controller('home', function($http) {
 
