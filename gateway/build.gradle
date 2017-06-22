@@ -55,6 +55,7 @@ dependencies {
     webjars("org.webjars:angularjs:$versionAngular")
     webjars("org.webjars.bower:bootstrap:$versionBootstrap")
     webjars("org.webjars.npm:jquery:$versionJQuery")
+    webjars('org.webjars:jasmine:2.5.0')
 }
 
 dependencyManagement {
