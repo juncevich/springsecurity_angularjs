@@ -1,6 +1,8 @@
 buildscript {
+    ext.kotlin_version = '1.1.3'
     ext {
         springBootVersion = '1.5.4.RELEASE'
+        kotlin_version = '1.1.3'
     }
     repositories {
         mavenCentral()
@@ -9,9 +11,12 @@ buildscript {
     dependencies {
         classpath("ro.isdc.wro4j.gradle:wro4j-gradle-plugin:1.8.0.Beta4")
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlin_version}")
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
+apply plugin: 'kotlin'
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
@@ -56,10 +61,21 @@ dependencies {
     webjars("org.webjars.bower:bootstrap:$versionBootstrap")
     webjars("org.webjars.npm:jquery:$versionJQuery")
     webjars('org.webjars:jasmine:2.5.0')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
 }
 
 dependencyManagement {
     imports {
         mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
+}
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
     }
 }

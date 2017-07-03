@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/admin/admin.iml" filepath="$PROJECT_DIR$/.idea/modules/admin/admin.iml" group="admin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/admin/admin_main.iml" filepath="$PROJECT_DIR$/.idea/modules/admin/admin_main.iml" group="admin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/admin/admin_test.iml" filepath="$PROJECT_DIR$/.idea/modules/admin/admin_test.iml" group="admin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gateway/gateway.iml" filepath="$PROJECT_DIR$/.idea/modules/gateway/gateway.iml" group="gateway" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gateway/gateway_main.iml" filepath="$PROJECT_DIR$/.idea/modules/gateway/gateway_main.iml" group="gateway" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gateway/gateway_test.iml" filepath="$PROJECT_DIR$/.idea/modules/gateway/gateway_test.iml" group="gateway" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/resource/resource.iml" filepath="$PROJECT_DIR$/.idea/modules/resource/resource.iml" group="resource" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/resource/resource_main.iml" filepath="$PROJECT_DIR$/.idea/modules/resource/resource_main.iml" group="resource" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/resource/resource_test.iml" filepath="$PROJECT_DIR$/.idea/modules/resource/resource_test.iml" group="resource" />

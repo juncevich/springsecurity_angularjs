@@ -2,6 +2,10 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="admin_main" target="1.8" />
+      <module name="admin_test" target="1.8" />
+      <module name="gateway_main" target="1.8" />
+      <module name="gateway_test" target="1.8" />
       <module name="resource_main" target="1.8" />
       <module name="resource_test" target="1.8" />
       <module name="springsecurity_angularjs_main" target="1.8" />
